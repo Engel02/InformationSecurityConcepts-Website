@@ -3,6 +3,17 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { defineNuxtConfig } from 'nuxt/config'
 
 export default defineNuxtConfig({
+
+  nitro: {
+    azure: {
+      config: {
+        // ...
+        platform: {
+          apiRuntime: 'node:21'
+        }
+      }
+    }
+  }
   //...
   devtools: { enabled: false },
   runtimeConfig: {
